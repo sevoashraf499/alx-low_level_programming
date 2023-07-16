@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: 'assigns a random number to int n everytime. It executes, and prints it'
+ * Description: Assigns a random number to int n everytime.
+ * It executes, and prints it.
  *
  * Return: Always 0 (Success)
  */
@@ -24,6 +25,5 @@ int main(void)
 	else
 		printf("%d is zero\n", n);
 
-	return (0);
-	
+	return (0);	
 }
