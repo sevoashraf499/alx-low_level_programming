@@ -12,7 +12,7 @@ int main(void)
 {
 	short int c;
 
-	for (c = 48; c < 58; c++)
+	for (c = 48;; c++)
 	{
 		putchar(c);
 		putchar(44);
