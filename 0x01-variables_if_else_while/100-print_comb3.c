@@ -1,29 +1,34 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - prints all possible different combinations of two digits
- * Return: ALways 0 (Success)
+ * main - Entry point
+ *
+ * Description: Prints numbers from 0 to 99 separated by , and space
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int n, m;
+	short int c;
+	short int i;
 
-	for (n = 48; n <= 56; n++)
+	for (c = 48; c < 58; c++)
 	{
-		for (m = 49; m <= 57; m++)
+		for (i = c + 1; i < 58)
 		{
-			if (m > n)
-			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar(c);
+			putchar(i);
+			putchar(44);
+			putchar(32);
 		}
+		
+		if (c == 57)
+			break;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+
