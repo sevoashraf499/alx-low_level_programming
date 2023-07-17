@@ -17,18 +17,19 @@ int main(void)
 		for (i = c; i < 58; i++)
 			{
 				putchar(48);
-				putchar(48);
+				putchar(z);
+
+				putchar(32);
 
 				putchar(c);
 				putchar(i);
 
-				if (c == 57 && i == 57)
+				if (c == 57 && i == 57 && z == 48)
 				{
 					c = 48;
 					z++;
 				}
-
-				if (c == 57 && i == 57 && z == 49)
+				else if (c == 57 && i == 56 && z == 49)
 					break;
 
 				putchar(44);
