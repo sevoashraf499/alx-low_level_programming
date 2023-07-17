@@ -18,14 +18,15 @@ int main(void)
 			{
 				putchar(c);
 				putchar(i);
+				putchar(z);
 
-				if (c == 55 && i == 56 && z == 57 )
+				if (c == 55 && i == 56 && z == 57)
 					break;
 
 				putchar(44);
 				putchar(32);
 			}
-		
+
 	putchar('\n');
 
 	return (0);
