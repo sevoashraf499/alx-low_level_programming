@@ -1,24 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include<stdio.h>
 
 /**
- * main - Prints the alphabet without q and e.
+ * main - Entry point
+ *
+ * Description: Prints the alphabet in lower case without q and e.
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
+	char c;
 
-	for (i = 97; i < 123; i++)
+	for(c = 'a'; c <= 'z'; c++)
 	{
-		if (i != 101 && i != 113)
-		{
-			putchar(i);
-		}
+		if (c == 'e' || c == 'q')
+			continue;
+		else
+			putchar(c);
 	}
-	putchar('\n');
-	return (0);
-}
 
+	putchar('\n');
+
+	return(0);
+}
