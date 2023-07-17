@@ -15,23 +15,20 @@ int main(void)
 
 	for (c = 48; c < 58; c++)
 	{
-		for (i = c + 1; i < 58; i++)
+		for (i = c + 1;; i++)
 		{
 			putchar(c);
 			putchar(i);
-			putchar(44);
-			putchar(32);
 
 			if (i == 57)
 				break;
-		}
 
-		if (c == 57)
-			break;
+			putchar(44);
+			putchar(32);
+		}
 	}
 
 	putchar('\n');
 
 	return (0);
 }
-
