@@ -13,7 +13,7 @@ int main(void)
 	short int c, i, z;
 
 	for (c = 48; c < 56; c++)
-		for (i = c + 1; i < 57)
+		for (i = c + 1; i < 57; i++)
 			for (z = i + 1; z < 58; z++)
 			{
 				putchar(c);
