@@ -11,20 +11,30 @@
 int main(void)
 {
 	short int c, i;
+	short int z = 48;
 
 	for (c = 48; c < 58; c++)
 		for (i = c; i < 58; i++)
 			{
+				putchar(48);
+				putchar(48);
+
 				putchar(c);
 				putchar(i);
 
 				if (c == 57 && i == 57)
+				{
+					c = 48;
+					z++;
+				}
+
+				if (c == 57 && i == 57 && z == 49)
 					break;
 
 				putchar(44);
 				putchar(32);
 			}
-		
+
 	putchar('\n');
 
 	return (0);
