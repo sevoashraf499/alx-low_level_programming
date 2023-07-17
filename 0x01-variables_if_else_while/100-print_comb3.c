@@ -10,17 +10,16 @@
 
 int main(void)
 {
-	short int c;
-	short int i;
+	short int c, i;
 
-	for (c = 48; c < 58; c++)
+	for (c = 48; c < 57; c++)
 	{
-		for (i = c + 1;; i++)
+		for (i = c + 1; i < 58; i++)
 		{
 			putchar(c);
 			putchar(i);
 
-			if (i == 58)
+			if (c == 56 && i == 57)
 				break;
 
 			putchar(44);
