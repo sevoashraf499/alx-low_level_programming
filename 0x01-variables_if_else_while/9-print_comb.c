@@ -1,22 +1,29 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
+ * main - Entry point
+ *
+ * Description: Prints numbers from 0 to 9 separated by , and space
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int n;
+	short int c;
 
-	for (n = 48; n < 58; n++)
+	for (c = 48; c < 58; c++)
 	{
-		putchar(n);
-		if (n != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(c);
+		putchar(44);
+		putchar(32);
+
+		if (c == 57)
+			break;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
+
