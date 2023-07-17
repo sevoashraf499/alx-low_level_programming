@@ -18,7 +18,7 @@ int main(void)
 
 		if (c == 57)
 			c = 96;
-		if (c == 103)
+		if (c == 102)
 			break;
 	}
 
