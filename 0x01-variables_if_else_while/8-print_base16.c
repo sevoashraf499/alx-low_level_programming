@@ -1,18 +1,28 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - prints the lowercase alphabet in reverse,
- * followed by a new line
+ * main - Entry point
+ *
+ * Description: Prints all characters of base 16.
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	char ch;
+	char c;
 
-	for (ch = 'z'; ch >= 'a'; ch--)
+	for (c = 48; c < 58; c++)
 	{
-		putchar(ch);
+		putchar(c);
+
+		if (c == 57)
+			c = 97;
+		if (c == 103)
+			break;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
