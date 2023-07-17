@@ -12,7 +12,7 @@ int main(void)
 {
 	char c;
 
-	for(c = 'a'; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		if (c == 'e' || c == 'q')
 			continue;
@@ -22,5 +22,5 @@ int main(void)
 
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
