@@ -3,8 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Assigns a random number to int n everytime.
- * It executes, and prints it.
+ * Description: Prints all letters from a to z.
  *
  * Return: Always 0 (Success)
  */
