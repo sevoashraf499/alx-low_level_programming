@@ -1,18 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - prints the alphabet in lowercase, and then in uppercase,
- * followed by a new line
+ * main - Entry point
+ *
+ * Description: Prints all letters from a to z in lower case then upper case.
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int ch;
+	char c;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar(ch);
-	for (ch = 'A'; ch <= 'Z'; ch++)
-		putchar(ch);
+	for(c = 'a';; c++)
+	{
+		putchar(c);
+
+		if (c == 'z')
+			c = 'a' - ' ' - 1;
+
+		if (c == 'Z')
+			break;
+	}
+
 	putchar('\n');
-	return (0);
+
+	return(0);
 }
+
