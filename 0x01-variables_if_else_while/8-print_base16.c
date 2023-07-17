@@ -17,7 +17,7 @@ int main(void)
 		putchar(c);
 
 		if (c == 57)
-			c = 97;
+			c = 96;
 		if (c == 103)
 			break;
 	}
