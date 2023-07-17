@@ -1,10 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line
+ * main - Entry point
+ *
+ * Description: Assigns a random number to int n everytime.
+ * It executes, and prints it.
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	char ch;
@@ -14,5 +18,6 @@ int main(void)
 		putchar(ch);
 	}
 	putchar('\n');
+
 	return (0);
 }
