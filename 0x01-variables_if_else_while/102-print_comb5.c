@@ -1,42 +1,33 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints numbers from 0 to 99 separated by , and space
- *
+ * main - prints all possible combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	short int c, i;
-	short int z = 48;
+	int i, j;
 
-	for (c = 48; c < 58; c++)
-		for (i = c; i < 58; i++)
+	for (i = 0; i < 100; i++)
+	{
+		for (j = 0; j < 100; j++)
+		{
+			if (i < j)
 			{
-				putchar(48);
-				putchar(z);
-
-				putchar(32);
-
-				putchar(c);
-				putchar(i);
-
-				if (c == 57 && i == 57 && z == 48)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					c = 48;
-					z++;
+					putchar(',');
+					putchar(' ');
 				}
-				else if (c == 57 && i == 56 && z == 49)
-					break;
-
-				putchar(44);
-				putchar(32);
 			}
 
+		}
+	}
 	putchar('\n');
-
 	return (0);
 }
