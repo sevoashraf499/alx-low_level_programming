@@ -17,6 +17,12 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
+			if (j == n)
+			{
+				printf("%d", i * j);
+				return;
+			}
+
 			if (i * (j + 1) < 10)
 				printf("%d,   ", i * j);
 			else if (i * (j + 1) < 100)
