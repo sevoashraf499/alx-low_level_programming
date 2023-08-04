@@ -12,7 +12,7 @@ void print_times_table(int n)
 
 	if (n < 0 || n > 15)
 		return;
-	
+
 	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
@@ -24,7 +24,7 @@ void print_times_table(int n)
 			else if (i * (j + 1) < 1000)
 				printf("%d, ", i * j);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
 
