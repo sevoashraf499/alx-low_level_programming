@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum, res;
 
 	do {
 		sum = fib1 + fib2;
@@ -18,8 +18,8 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (sum < 4000000)
-			printf(", ");
+		if (sum % 2 == 0)
+			res += sum;
 	} while (sum < 4000000);
 
 	printf("\n");
