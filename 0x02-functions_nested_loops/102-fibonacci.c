@@ -17,10 +17,10 @@ int main(void)
 
 		printf("%d", sum);
 
-		fib1 = i;
+		fib1 = fib2;
 		fib2 = sum;
 
-		if (i != 49)
+		if (i == 49)
 			printf("\n");
 		else
 			printf(", ");
