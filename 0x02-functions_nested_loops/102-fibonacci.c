@@ -9,13 +9,14 @@
 
 int main(void)
 {
-	int i, fib1 = 0, fib2 = 1, sum;
+	int i, fib1 = 0, fib2 = 1;
+	unsigned long sum;
 
 	for (i = 0; i < 50; i++)
 	{
 		sum = fib1 + fib2;
 
-		printf("%d", sum);
+		printf("%lu", sum);
 
 		fib1 = fib2;
 		fib2 = sum;
