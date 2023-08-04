@@ -10,8 +10,7 @@ int main(void)
 {
 	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	do
-	{
+	do {
 		sum = fib1 + fib2;
 
 		printf("%lu", sum);
@@ -21,8 +20,7 @@ int main(void)
 
 		if (sum < 4000000)
 			printf(", ");
-	}
-	while(sum < 4000000);
+	} while (sum < 4000000);
 
 	printf("\n");
 
