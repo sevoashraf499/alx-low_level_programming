@@ -8,7 +8,7 @@
 
 int main(void)
 {
-    int i;
+	int i;
 	unsigned long fib1 = 0, fib2 = 1, sum = 0, res = 0;
 
 	for (i = 0; i < 33; i++)
@@ -22,7 +22,7 @@ int main(void)
 			res += sum;
 	}
 
-    printf("%lu\n", res);
+	printf("%lu\n", res);
 
 	return (0);
 }
