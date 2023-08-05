@@ -8,17 +8,19 @@
 
 int main(void)
 {
-    int i;
+	int i;
 	unsigned long fib1 = 0, fib2 = 1, sum = 0;
 
 	for (i = 0; i < 98; i++)
 	{
 		sum = fib1 + fib2;
 
-        if (i != 97)
-            printf("%lu, ", sum);
-        else
-            printf("%lu\n", sum);
+		printf("%lu", sum);
+
+		if (i != 97)
+			printf(", ");
+		else
+			printf("\n");
 
 		fib1 = fib2;
 		fib2 = sum;
