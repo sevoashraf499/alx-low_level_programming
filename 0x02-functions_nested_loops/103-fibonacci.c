@@ -8,21 +8,21 @@
 
 int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum, res;
+    int i;
+	unsigned long fib1 = 0, fib2 = 1, sum = 0, res = 0;
 
-	do {
+	for (i = 0; i < 33; i++)
+	{
 		sum = fib1 + fib2;
-
-		printf("%lu", sum);
 
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (sum % 2 == 0)
+		if (sum < 4000000 && sum % 2 == 0)
 			res += sum;
-	} while (sum < 4000000);
+	}
 
-	printf("\n");
+    printf("%lu\n", res);
 
 	return (0);
 }
