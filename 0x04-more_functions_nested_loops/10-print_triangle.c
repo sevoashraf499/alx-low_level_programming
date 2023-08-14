@@ -13,17 +13,17 @@ void print_triangle(int size)
 	int row, spaces, hashes;
 
 	if (size <= 0)
-		putchar('\n');
+		_putchar('\n');
 
 	for (row = 1; row <= size; row++)
 	{
 		for (spaces = 0; spaces < size - row; spaces++)
-			putchar(' ');
+			_putchar(' ');
 
 		for (hashes = 0; hashes < row; hashes++)
-			putchar('#');
+			_putchar('#');
 
-		putchar('\n');
+		_putchar('\n');
 	}
 }
 
