@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * rev_string - reverses a string
  * _putchar - print each character
@@ -7,20 +8,18 @@
  * Description: This will reverse a string
  * Return: 0 is success
  */
+
 void rev_string(char *s)
 {
-	int a = 0, b, c;
-	char d;
+	int strLength, i, j;
+    char t;
 
-	while (s[a] != '\0')
-	{
-		a++;
-	}
-	c = a - 1;
-	for (b = 0; c >= 0 && b < c; c--, b++)
-	{
-		d = s[b];
-		s[b] = s[c];
-		s[c] = d;
-	}
+    for (strLength = 0; s[strLength] != '\0'; strLength++);
+
+    for (i = 0, j = strLength - 1; j >= 0 && i < j; j--, i++)
+    {
+        t = s[i];
+        s[i] = s[j];
+        s[j] = t;
+    }
 }
